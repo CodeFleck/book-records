@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import LinkWrapper from './LinkWrapper';
 
 const Header = () =>{
     return (
         <nav>
                 <div className="nav-wrapper indigo lighten-2">
-                    <a href="/" className="brand-logo ml-3">Casa do Código</a>
+                    <LinkWrapper to="/" className="brand-logo ml-3">Casa do Código</LinkWrapper>
                     <ul id="nav-mobile" className="right">
-                        <li><Link to='/'></Link></li>
-                        <li><Link to='/'></Link></li>
-                        <li><Link to='/'></Link></li>
+                        <li><LinkWrapper to='/autores'>Autores</LinkWrapper></li>
+                        <li><LinkWrapper to='/livros'>Livros</LinkWrapper></li>
+                        <li><LinkWrapper to='/sobre'>Sobre</LinkWrapper></li>
                     </ul>
                 </div>
             </nav>
